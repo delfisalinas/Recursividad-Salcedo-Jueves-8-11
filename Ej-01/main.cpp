@@ -2,7 +2,18 @@
 
 #include "potencia.h"
 
+using namespace std;
+
 int main() {
-  std::cout << "Ejercicio 01/01\n" << std::endl;
-  return 0;
+    int base, exponente;
+    cout << "Ingrese la base: ";
+    cin >> base;
+    cout << "Ingrese el exponente: ";
+    cin >> exponente;
+
+    CalculadoraPotencia calculadora;
+    int resultado = calculadora.potencia(base, exponente);
+    cout << base << "^" << exponente << " = " << resultado << endl;
+
+    return 0;
 }
